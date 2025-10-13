@@ -2,7 +2,7 @@
   "lockfileVersion": 1,
   "workspaces": {
     "": {
-      "name": "studiova-nextjs",
+      "name": "GWS-nextjs",
       "dependencies": {
         "@iconify/icons-ion": "^1.2.10",
         "@iconify/react": "^5.2.0",

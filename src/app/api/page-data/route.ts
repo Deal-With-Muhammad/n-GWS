@@ -22,79 +22,83 @@ const avatarList = [
 const statsFactData = {
     number: '01',
     name: "Stats & facts",
-    heading: "High quality web design solutions you can trust.",
-    description: "When selecting a web design agency, it's essential to consider its reputation, experience, and the specific needs of your project.",
+    heading: "Proven results you can trust.",
+    description: "Helping clients secure their future through smart insurance and wealth strategies.",
     scoreData: [
-        {
-            number: 40,
-            numberValue: 'K',
-            scoreDescp: "People who have launched their websites"
-        },
-        {
-            number: 238,
-            scoreDescp: "Experienced professionals ready to assist"
-        },
-        {
-            number: 3,
+       {
+            number: 5,
             numberValue: 'M',
-            scoreDescp: "Support through messages and live consultations"
+            scoreDescp: "Total client assets protected and invested"
         },
+        
+             {
+            number: 100,
+            numberValue: '%',
+            scoreDescp: "Commitment to ethical and personalized service"
+        },
+        {
+            number: 500,
+            scoreDescp: "Families and professionals guided toward financial stability"
+        },
+   
+     
     ]
 };
 
 const servicesData = {
-    number: '03',
+    number: '02',
     name: "Services",
-    heading: "What we do",
-    description: "A glimpse into our creativity—exploring innovative designs, successful collaborations, and transformative digital experiences.",
+    heading: "What We Offer",
+    description: "Helping individuals and business owners protect their income, grow their wealth, and secure their future with personalized financial solutions.",
     data: [
         {
             id: 1,
             image: "/images/home/services/services_1.png",
-            heading: "Brand identity",
-            descp: "When selecting a web design agency, it's essential to consider its reputation, experience, and the specific needs of your project."
+        heading: "Insurance Planning",
+            descp: "Comprehensive life, health, and critical illness coverage designed to protect your family and assets from life’s uncertainties."
         },
         {
             id: 2,
             image: "/images/home/services/services_2.png",
-            heading: "Web development",
-            descp: "When selecting a web design agency, it's essential to consider its reputation, experience, and the specific needs of your project."
+             heading: "Investment Solutions",
+            descp: "Build long-term wealth through smart investment strategies like RRSP, TFSA, RESP, and corporate investment planning."
         },
         {
             id: 3,
             image: "/images/home/services/services_3.png",
-            heading: "Content creation",
-            descp: "When selecting a web design agency, it's essential to consider its reputation, experience, and the specific needs of your project."
+              heading: "Tax & Retirement Planning",
+            descp: "Reduce tax liabilities and plan ahead for a comfortable retirement with tailored financial guidance."
         },
         {
             id: 4,
             image: "/images/home/services/services_4.png",
-            heading: "Motion & 3d modeling",
-            descp: "When selecting a web design agency, it's essential to consider its reputation, experience, and the specific needs of your project."
+           heading: "Career Opportunities",
+            descp: "Join our growing team and build a rewarding career in financial services with mentorship, training, and flexible growth options."
         },
     ]
 };
 
 const testimonialData = {
     data_1: {
-        preTitle: "Hear from them",
-        title: "Our website redesign was flawless. They understood our vision perfectly!",
-        author: "Albert Flores",
-        company: "MasterCard"
+        preTitle: "Client stories",
+        title: "They helped me organize my finances and save more effectively for my family's future.",
+        author: "Daniel Roberts",
+        company: "Business Owner"
     },
     data_2: {
-        preTitle: "Hear from them",
-        title: "From concept to execution, they delivered outstanding results. Highly recommend their expertise!",
-        author: "Robert Fox",
-        company: "Mitsubishi"
+        preTitle: "Client stories",
+        title: "Thanks to their guidance, I built a solid investment plan and reduced my taxes significantly.",
+        author: "Sophia Lee",
+        company: "Senior Consultant"
     },
     data_3: {
-        preTitle: "Hear from them",
-        title: "Super smooth process with incredible results. highly recommend!",
-        author: "Jenny Wilson",
-        company: "Pizza Hut"
+        preTitle: "Client stories",
+        title: "Professional, clear, and reliable. I now feel fully confident about my financial goals.",
+        author: "Michael Chen",
+        company: "Entrepreneur"
     },
 };
+
 
 const teamData = {
     number: '06',
@@ -213,27 +217,28 @@ const pricingData = {
 const faqData = {
     data: [
         {
-            faq_que: "What services does your agency offer?",
-            faq_ans: 'Yes, we provide post-launch support to ensure smooth implementation and offer ongoing maintenance packages for clients needing regular updates or technical assistance.'
+            faq_que: "What services do you provide?",
+            faq_ans: "We help clients with financial planning, tax strategies, wealth building, and creating multiple income streams through personalized solutions."
         },
         {
-            faq_que: "How long does a typical project take?",
-            faq_ans: 'Yes, we provide post-launch support to ensure smooth implementation and offer ongoing maintenance packages for clients needing regular updates or technical assistance.'
+            faq_que: "Who can benefit from your services?",
+            faq_ans: "We work with professionals, business owners, and families who want to grow their wealth, protect their assets, and plan for financial freedom."
         },
         {
-            faq_que: "Do you offer custom designs, or do you use templates?",
-            faq_ans: 'Yes, we provide post-launch support to ensure smooth implementation and offer ongoing maintenance packages for clients needing regular updates or technical assistance.'
+            faq_que: "Do you charge for consultations?",
+            faq_ans: "Our first consultation is completely free. It helps us understand your goals and see how we can best assist you."
         },
         {
-            faq_que: "What’s the cost of a project?",
-            faq_ans: 'Yes, we provide post-launch support to ensure smooth implementation and offer ongoing maintenance packages for clients needing regular updates or technical assistance.'
+            faq_que: "How do you help reduce taxes?",
+            faq_ans: "We use proven strategies to optimize income, investments, and savings—helping clients legally minimize their taxes and maximize returns."
         },
         {
-            faq_que: "Do you provide ongoing support after project completion?",
-            faq_ans: 'Yes, we provide post-launch support to ensure smooth implementation and offer ongoing maintenance packages for clients needing regular updates or technical assistance.'
+            faq_que: "Can I get ongoing financial support?",
+            faq_ans: "Yes, we provide continuous support, regular reviews, and updates to keep your financial plan aligned with your goals."
         }
     ]
 };
+
 const contactData = {
     keypoint:["Always-On Customer Support","Service Across the Globe"],
     managerProfile:{

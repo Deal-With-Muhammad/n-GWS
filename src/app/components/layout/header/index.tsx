@@ -168,47 +168,16 @@ const Header = () => {
                         />
                       ))}
                     </ul>
-
-                    {user?.user || session?.user ? (
-                      <div className="flex flex-col gap-2">
-                        <button
-                          onClick={() => handleSignOut()}
-                          className="flex justify-center items-center cursor-pointer gap-2 text-secondary hover:text-white dark:border dark:border-primary dark:hover:text-white bg-primary dark:hover:bg-transparent dark:hover:border dark:hover:border-white hover:bg-secondary text-xl font-bold rounded-full py-2.5 px-4.5 transition-all duration-300 ease-in-out"
-                        >
-                          Sign Out
-                          <Icon
-                            icon="solar:logout-outline"
-                            width="25"
-                            height="25"
-                          />
-                        </button>
-                      </div>
-                    ) : (
-                      <div className="flex gap-3">
-                        <Link
-                          href={"/signin"}
-                          className="flex justify-center items-center gap-2 w-full text-secondary dark:text-white text-xl font-bold rounded-full border border-secondary/20 dark:border-white py-1.5 px-4.5 hover:bg-secondary/15"
-                        >
-                          Sign In
-                        </Link>
-                        <Link
-                          href={"/signup"}
-                          className="flex justify-center items-center gap-2 w-full text-white text-xl font-bold rounded-full bg-secondary py-2 px-4.5 hover:bg-secondary/90"
-                        >
-                          Sign Up
-                        </Link>
-                      </div>
-                    )}
                   </div>
                   <div>
                     <Link
-                      href="tel:+1-212-456-7890"
+                      href="tel:+1 (647) 540-9974"
                       className="text-secondary/60 dark:text-white/60 hover:text-secondary dark:hover:text-white"
                     >
-                      +1-212-456-7890
+                      +1 (647) 540-9974
                     </Link>
-                    <Link href="mailto:info@wrappixel.com">
-                      <h4>info@wrappixel.com</h4>
+                    <Link href="mailto:sadeedb626@gmail.com">
+                      <h4>sadeedb626@gmail.com</h4>
                     </Link>
                   </div>
                 </div>

@@ -1,12 +1,15 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Image from "next/image";
-import tline from "/public/images/svgs/T-Line.svg"
-import t_half_line from "/public/images/svgs/T-half_line.svg"
-import straight_line from "/public/images/svgs/straight_group.svg"
-import small_straight_line from "/public/images/svgs/smal_straight_line.svg"
+import tline from "/public/images/svgs/T-Line.svg";
+import t_half_line from "/public/images/svgs/T-half_line.svg";
+import straight_line from "/public/images/svgs/straight_group.svg";
+import small_straight_line from "/public/images/svgs/smal_straight_line.svg";
 
 export const PackageStructure = () => {
-  const Counts = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30];
+  const Counts = [
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+    21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+  ];
   return (
     <div id="structure" className="md:scroll-m-[130px] scroll-m-28">
       <h3 className=" text-black text-2xl font-semibold mt-8 dark:text-white">
@@ -15,13 +18,13 @@ export const PackageStructure = () => {
       <div className="rounded-2xl p-6 pt-3 border border-black/10 dark:border-white/20 mt-6">
         <div className="flex items-center gap-4">
           <h5 className="text-base font-medium mt-3 mb-1">
-            Studiova Tailwind Nextjs Templates
+            GWS Tailwind Nextjs Templates
           </h5>
         </div>
         <ul className="ps-0 md:ps-5 list-unstyled">
           <li className="py-2">
             <div className="flex items-center gap-3">
-              <p className="text-xl text-black dark:text-white/50" >|—</p>
+              <p className="text-xl text-black dark:text-white/50">|—</p>
               <span className="font-medium text-dark dark:text-white/50">
                 <Icon
                   icon="tabler:folder"
@@ -37,7 +40,9 @@ export const PackageStructure = () => {
                     <ul className="ps-0 md:ps-5 list-unstyled">
                       <li className="py-2">
                         <div className="flex items-center gap-3">
-                          <p className="text-xl text-black dark:text-white/50" >|—</p>
+                          <p className="text-xl text-black dark:text-white/50">
+                            |—
+                          </p>
                           <span className="font-medium text-dark dark:text-white/50">
                             <Icon
                               icon="tabler:folder"
@@ -49,7 +54,9 @@ export const PackageStructure = () => {
                       </li>
                       <li className="py-2">
                         <div className="flex items-center gap-3">
-                          <p className="text-xl text-black dark:text-white/50" >|—</p>
+                          <p className="text-xl text-black dark:text-white/50">
+                            |—
+                          </p>
                           <span className="font-medium text-dark dark:text-white/50">
                             <Icon
                               icon="tabler:folder"
@@ -61,7 +68,9 @@ export const PackageStructure = () => {
                       </li>
                       <li className="py-2">
                         <div className="flex items-center gap-3">
-                          <p className="text-xl text-black dark:text-white/50" >|—</p>
+                          <p className="text-xl text-black dark:text-white/50">
+                            |—
+                          </p>
                           <span className="font-medium text-dark dark:text-white/50">
                             <Icon
                               icon="tabler:folder"
@@ -72,18 +81,23 @@ export const PackageStructure = () => {
                         </div>
                         <div className="flex">
                           <div className="flex flex-col justify-between gap-2 mt-2">
-                            {
-                              Counts.slice(0, 19).map((item, index) => {
-                                return (
-                                  <p key={index} className="text-xl text-black dark:text-white/50" >|</p>
-                                )
-                              })
-                            }
+                            {Counts.slice(0, 19).map((item, index) => {
+                              return (
+                                <p
+                                  key={index}
+                                  className="text-xl text-black dark:text-white/50"
+                                >
+                                  |
+                                </p>
+                              );
+                            })}
                           </div>
                           <ul className="ps-5 md:ps-12 list-unstyled">
                             <li className="py-2">
                               <div className="flex items-center gap-3">
-                                <p className="text-xl text-black dark:text-white/50" >|—</p>
+                                <p className="text-xl text-black dark:text-white/50">
+                                  |—
+                                </p>
                                 <span className="font-medium text-dark dark:text-white/50">
                                   <Icon
                                     icon="tabler:folder"
@@ -94,18 +108,23 @@ export const PackageStructure = () => {
                               </div>
                               <div className="flex">
                                 <div className="flex flex-col justify-between gap-2 mt-2">
-                                  {
-                                    Counts.slice(0, 12).map((item, index) => {
-                                      return (
-                                        <p key={index} className="text-xl text-black dark:text-white/50" >|</p>
-                                      )
-                                    })
-                                  }
+                                  {Counts.slice(0, 12).map((item, index) => {
+                                    return (
+                                      <p
+                                        key={index}
+                                        className="text-xl text-black dark:text-white/50"
+                                      >
+                                        |
+                                      </p>
+                                    );
+                                  })}
                                 </div>
                                 <ul className="ps-5 md:ps-12 list-unstyled red">
                                   <li className="py-2">
                                     <div className="flex items-center gap-3">
-                                      <p className="text-xl text-black dark:text-white/50" >|—</p>
+                                      <p className="text-xl text-black dark:text-white/50">
+                                        |—
+                                      </p>
                                       <span className="font-medium text-dark dark:text-white/50">
                                         <Icon
                                           icon="tabler:folder"
@@ -119,21 +138,26 @@ export const PackageStructure = () => {
                                     </div>
                                     <div className="flex">
                                       <div className="flex flex-col justify-between gap-2 mt-2">
-                                        {
-                                          Counts.slice(0, 5).map((item, index) => {
+                                        {Counts.slice(0, 5).map(
+                                          (item, index) => {
                                             return (
-                                              <p key={index} className="text-xl text-black dark:text-white/50" >|</p>
-                                            )
-                                          })
-                                        }
+                                              <p
+                                                key={index}
+                                                className="text-xl text-black dark:text-white/50"
+                                              >
+                                                |
+                                              </p>
+                                            );
+                                          }
+                                        )}
                                       </div>
 
                                       <ul className="ps-5 md:ps-12 list-unstyled">
-
                                         <li className="py-2">
-
                                           <div className="flex items-center gap-3">
-                                            <p className="text-xl text-black dark:text-white/50" >|—</p>
+                                            <p className="text-xl text-black dark:text-white/50">
+                                              |—
+                                            </p>
                                             <span className="font-medium text-dark dark:text-white/50">
                                               <Icon
                                                 icon="tabler:folder"
@@ -142,12 +166,12 @@ export const PackageStructure = () => {
                                               (auth) (Contains all auth pages)
                                             </span>
                                           </div>
-
                                         </li>
                                         <li className="py-2">
-
                                           <div className="flex items-center gap-3">
-                                            <p className="text-xl text-black dark:text-white/50" >|—</p>
+                                            <p className="text-xl text-black dark:text-white/50">
+                                              |—
+                                            </p>
                                             <span className="font-medium text-dark dark:text-white/50">
                                               <Icon
                                                 icon="tabler:folder"
@@ -156,12 +180,12 @@ export const PackageStructure = () => {
                                               about
                                             </span>
                                           </div>
-
                                         </li>
                                         <li className="py-2">
-
                                           <div className="flex items-center gap-3">
-                                            <p className="text-xl text-black dark:text-white/50" >|—</p>
+                                            <p className="text-xl text-black dark:text-white/50">
+                                              |—
+                                            </p>
                                             <span className="font-medium text-dark dark:text-white/50">
                                               <Icon
                                                 icon="tabler:folder"
@@ -170,12 +194,12 @@ export const PackageStructure = () => {
                                               blog
                                             </span>
                                           </div>
-
                                         </li>
                                         <li className="py-2">
-
                                           <div className="flex items-center gap-3">
-                                            <p className="text-xl text-black dark:text-white/50" >|—</p>
+                                            <p className="text-xl text-black dark:text-white/50">
+                                              |—
+                                            </p>
                                             <span className="font-medium text-dark dark:text-white/50">
                                               <Icon
                                                 icon="tabler:folder"
@@ -184,12 +208,12 @@ export const PackageStructure = () => {
                                               contact
                                             </span>
                                           </div>
-
                                         </li>
                                         <li className="py-2">
-
                                           <div className="flex items-center gap-3">
-                                            <p className="text-xl text-black dark:text-white/50" >|—</p>
+                                            <p className="text-xl text-black dark:text-white/50">
+                                              |—
+                                            </p>
                                             <span className="font-medium text-dark dark:text-white/50">
                                               <Icon
                                                 icon="tabler:folder"
@@ -198,12 +222,12 @@ export const PackageStructure = () => {
                                               documentation
                                             </span>
                                           </div>
-
                                         </li>
                                         <li className="py-2">
-
                                           <div className="flex items-center gap-3">
-                                            <p className="text-xl text-black dark:text-white/50" >|—</p>
+                                            <p className="text-xl text-black dark:text-white/50">
+                                              |—
+                                            </p>
                                             <span className="font-medium text-dark dark:text-white/50">
                                               <Icon
                                                 icon="tabler:folder"
@@ -212,12 +236,12 @@ export const PackageStructure = () => {
                                               privacy-policy
                                             </span>
                                           </div>
-
                                         </li>
                                         <li className="py-2">
-
                                           <div className="flex items-center gap-3">
-                                            <p className="text-xl text-black dark:text-white/50" >|—</p>
+                                            <p className="text-xl text-black dark:text-white/50">
+                                              |—
+                                            </p>
                                             <span className="font-medium text-dark dark:text-white/50">
                                               <Icon
                                                 icon="tabler:folder"
@@ -226,12 +250,12 @@ export const PackageStructure = () => {
                                               projects
                                             </span>
                                           </div>
-
                                         </li>
                                         <li className="py-2">
-
                                           <div className="flex items-center gap-3">
-                                            <p className="text-xl text-black dark:text-white/50" >|—</p>
+                                            <p className="text-xl text-black dark:text-white/50">
+                                              |—
+                                            </p>
                                             <span className="font-medium text-dark dark:text-white/50">
                                               <Icon
                                                 icon="tabler:folder"
@@ -240,14 +264,15 @@ export const PackageStructure = () => {
                                               terms-and-conditions
                                             </span>
                                           </div>
-
                                         </li>
                                       </ul>
                                     </div>
                                   </li>
                                   <li className="py-2">
                                     <div className="flex items-center gap-3">
-                                      <p className="text-xl text-black dark:text-white/50" >|—</p>
+                                      <p className="text-xl text-black dark:text-white/50">
+                                        |—
+                                      </p>
                                       <span className="font-medium text-dark dark:text-white/50">
                                         <Icon
                                           icon="tabler:folder"
@@ -259,7 +284,9 @@ export const PackageStructure = () => {
                                   </li>
                                   <li className="py-2">
                                     <div className="flex items-center gap-3">
-                                      <p className="text-xl text-black dark:text-white/50" >|—</p>
+                                      <p className="text-xl text-black dark:text-white/50">
+                                        |—
+                                      </p>
                                       <span className="font-medium text-dark dark:text-white/50">
                                         <Icon
                                           icon="tabler:folder"
@@ -271,7 +298,9 @@ export const PackageStructure = () => {
                                   </li>
                                   <li className="py-2">
                                     <div className="flex items-center gap-3">
-                                      <p className="text-xl text-black dark:text-white/50" >|—</p>
+                                      <p className="text-xl text-black dark:text-white/50">
+                                        |—
+                                      </p>
                                       <span className="font-medium text-dark dark:text-white/50">
                                         global.css
                                       </span>
@@ -279,7 +308,9 @@ export const PackageStructure = () => {
                                   </li>
                                   <li className="py-2">
                                     <div className="flex items-center gap-3">
-                                      <p className="text-xl text-black dark:text-white/50" >|—</p>
+                                      <p className="text-xl text-black dark:text-white/50">
+                                        |—
+                                      </p>
                                       <span className="font-medium text-dark dark:text-white/50">
                                         layout.tsx
                                       </span>
@@ -287,7 +318,9 @@ export const PackageStructure = () => {
                                   </li>
                                   <li className="py-2">
                                     <div className="flex items-center gap-3">
-                                      <p className="text-xl text-black dark:text-white/50" >|—</p>
+                                      <p className="text-xl text-black dark:text-white/50">
+                                        |—
+                                      </p>
                                       <span className="font-medium text-dark dark:text-white/50">
                                         not-found.tsx
                                       </span>
@@ -295,7 +328,9 @@ export const PackageStructure = () => {
                                   </li>
                                   <li className="py-2">
                                     <div className="flex items-center gap-3">
-                                      <p className="text-xl text-black dark:text-white/50" >|—</p>
+                                      <p className="text-xl text-black dark:text-white/50">
+                                        |—
+                                      </p>
                                       <span className="font-medium text-dark dark:text-white/50">
                                         page.tsx
                                       </span>
@@ -308,18 +343,23 @@ export const PackageStructure = () => {
                         </div>
                         <div className="flex">
                           <div className="flex flex-col justify-between gap-2 mt-2">
-                            {
-                              Counts.slice(0, 6).map((item, index) => {
-                                return (
-                                  <p key={index} className="text-xl text-black dark:text-white/50" >|</p>
-                                )
-                              })
-                            }
+                            {Counts.slice(0, 6).map((item, index) => {
+                              return (
+                                <p
+                                  key={index}
+                                  className="text-xl text-black dark:text-white/50"
+                                >
+                                  |
+                                </p>
+                              );
+                            })}
                           </div>
                           <ul className="ps-5 md:ps-12 list-unstyled">
                             <li className="py-2">
                               <div className="flex items-center gap-3">
-                                <p className="text-xl text-black dark:text-white/50" >|—</p>
+                                <p className="text-xl text-black dark:text-white/50">
+                                  |—
+                                </p>
                                 <span className="font-medium text-dark dark:text-white/50">
                                   <Icon
                                     icon="tabler:folder"
@@ -330,18 +370,23 @@ export const PackageStructure = () => {
                               </div>
                               <div className="flex">
                                 <div className="flex flex-col justify-between gap-2 mt-2">
-                                  {
-                                    Counts.slice(0, 4).map((item, index) => {
-                                      return (
-                                        <p key={index} className="text-xl text-black dark:text-white/50" >|</p>
-                                      )
-                                    })
-                                  }
+                                  {Counts.slice(0, 4).map((item, index) => {
+                                    return (
+                                      <p
+                                        key={index}
+                                        className="text-xl text-black dark:text-white/50"
+                                      >
+                                        |
+                                      </p>
+                                    );
+                                  })}
                                 </div>
                                 <ul className="ps-5 md:ps-12 list-unstyled red">
                                   <li className="py-2">
                                     <div className="flex items-center gap-3">
-                                      <p className="text-xl text-black dark:text-white/50" >|—</p>
+                                      <p className="text-xl text-black dark:text-white/50">
+                                        |—
+                                      </p>
                                       <span className="font-medium text-dark dark:text-white/50">
                                         auth.ts
                                       </span>
@@ -349,7 +394,9 @@ export const PackageStructure = () => {
                                   </li>
                                   <li className="py-2">
                                     <div className="flex items-center gap-3">
-                                      <p className="text-xl text-black dark:text-white/50" >|—</p>
+                                      <p className="text-xl text-black dark:text-white/50">
+                                        |—
+                                      </p>
                                       <span className="font-medium text-dark dark:text-white/50">
                                         blogmarkdown.ts
                                       </span>
@@ -357,7 +404,9 @@ export const PackageStructure = () => {
                                   </li>
                                   <li className="py-2">
                                     <div className="flex items-center gap-3">
-                                      <p className="text-xl text-black dark:text-white/50" >|—</p>
+                                      <p className="text-xl text-black dark:text-white/50">
+                                        |—
+                                      </p>
                                       <span className="font-medium text-dark dark:text-white/50">
                                         markdown.ts
                                       </span>
@@ -365,7 +414,9 @@ export const PackageStructure = () => {
                                   </li>
                                   <li className="py-2">
                                     <div className="flex items-center gap-3">
-                                      <p className="text-xl text-black dark:text-white/50" >|—</p>
+                                      <p className="text-xl text-black dark:text-white/50">
+                                        |—
+                                      </p>
                                       <span className="font-medium text-dark dark:text-white/50">
                                         markdownToHtml.ts
                                       </span>
@@ -379,7 +430,9 @@ export const PackageStructure = () => {
                       </li>
                       <li className="py-2">
                         <div className="flex items-center gap-3">
-                          <p className="text-xl text-black dark:text-white/50" >|—</p>
+                          <p className="text-xl text-black dark:text-white/50">
+                            |—
+                          </p>
                           <span className="font-medium text-dark dark:text-white/50">
                             <i className="ti ti-file me-2 text-primary font-bold" />
                             next.config.mjs
@@ -388,7 +441,9 @@ export const PackageStructure = () => {
                       </li>
                       <li className="py-2">
                         <div className="flex items-center gap-3">
-                          <p className="text-xl text-black dark:text-white/50" >|—</p>
+                          <p className="text-xl text-black dark:text-white/50">
+                            |—
+                          </p>
                           <span className="font-medium text-dark dark:text-white/50">
                             <i className="ti ti-file me-2 text-primary font-bold" />
                             postcss.config.mjs
@@ -397,7 +452,9 @@ export const PackageStructure = () => {
                       </li>
                       <li className="py-2">
                         <div className="flex items-center gap-3">
-                          <p className="text-xl text-black dark:text-white/50" >|—</p>
+                          <p className="text-xl text-black dark:text-white/50">
+                            |—
+                          </p>
                           <span className="font-medium text-dark dark:text-white/50">
                             <i className="ti ti-file me-2 text-primary font-bold" />
                             package.json
@@ -406,7 +463,9 @@ export const PackageStructure = () => {
                       </li>
                       <li className="py-2">
                         <div className="flex items-center gap-3">
-                          <p className="text-xl text-black dark:text-white/50" >|—</p>
+                          <p className="text-xl text-black dark:text-white/50">
+                            |—
+                          </p>
                           <span className="font-medium text-dark dark:text-white/50">
                             <i className="ti ti-file me-2 text-primary font-bold" />
                             tailwind.config.ts
@@ -415,7 +474,9 @@ export const PackageStructure = () => {
                       </li>
                       <li className="py-2">
                         <div className="flex items-center gap-3">
-                          <p className="text-xl text-black dark:text-white/50" >|—</p>
+                          <p className="text-xl text-black dark:text-white/50">
+                            |—
+                          </p>
                           <span className="font-medium text-dark dark:text-white/50">
                             <i className="ti ti-file me-2 text-primary font-bold" />
                             tsconfig.json

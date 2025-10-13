@@ -12,23 +12,20 @@ import Team from "./components/home/team";
 import Testimonial from "./components/home/testimonial";
 
 export const metadata: Metadata = {
-    title: "Studiova",
+  title: "GWS",
 };
 
 export default function Home() {
   return (
     <>
       <HeroSection />
-      <StatsFacts/>
-      <Portfolio/>
-      <Services/>
-      <Aboutus/>
-      <Testimonial/>
-      <Team teamdataNumber="06"/>
-      <Pricing/>
-      <Faq/>
-      <Resources/>
-      <Contact contactdataNumber="10"/>
+      <StatsFacts />
+      {/* <Portfolio/> */}
+      <Services />
+      <Aboutus />
+      <Testimonial />
+      <Faq />
+      <Contact contactdataNumber="6" />
     </>
   );
 }
