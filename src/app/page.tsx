@@ -11,11 +11,11 @@ export default function Home() {
     <>
       <SectionHero />
 
-      {/* <LoaderWindow
+      <LoaderWindow
         setLoaderFinished={setLoaderFinished}
         displayed={displayed}
         setDisplayed={setDisplayed}
-      /> */}
+      />
     </>
   );
 }
