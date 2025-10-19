@@ -24,14 +24,14 @@ export const LoaderWindow = ({ setLoaderFinished }) => {
       gsap.registerPlugin(SplitText);
 
       gsap.to(overflowTopRef.current, {
-        y: "-50%",
-        duration: 1.3 * 8,
+        y: "-100%",
+        duration: 1.3 * 7,
         ease: "power1.out",
       });
 
       gsap.to(overflowBottomRef.current, {
-        y: "50%",
-        duration: 1.3 * 8,
+        y: "100%",
+        duration: 1.3 * 7,
         ease: "power1.out",
       });
 
