@@ -1,25 +1,20 @@
 "use client";
 // @ts-nocheck
 import { useTexture } from "@react-three/drei";
-import { MeshMatcapMaterialProps } from "@react-three/fiber";
-import { forwardRef } from "react";
+import { forwardRef, JSX } from "react";
 import { MeshMatcapMaterial } from "three";
 import React from "react";
+
+// ✅ Use the intrinsic type instead of importing from fiber
+type MeshMatcapMaterialProps = JSX.IntrinsicElements["meshMatcapMaterial"];
 
 export const CustomMaterial = forwardRef<
   MeshMatcapMaterial,
   MeshMatcapMaterialProps
 >((props, ref) => {
-  // Load the "3.jpeg" texture directly
   const texture = useTexture("/images/1.jpeg");
 
-  return (
-    <meshMatcapMaterial
-      {...props}
-      ref={ref}
-      matcap={texture}
-    />
-  );
+  return <meshMatcapMaterial {...props} ref={ref} matcap={texture} />;
 });
 
 CustomMaterial.displayName = "CustomMaterial";
