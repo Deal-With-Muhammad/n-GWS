@@ -1,8 +1,8 @@
 "use client";
 // @ts-nocheck
 import { Center, Instance, Instances } from "@react-three/drei";
-import { GroupProps, useFrame } from "@react-three/fiber";
-import { useRef } from "react";
+import { useFrame } from "@react-three/fiber";
+import { JSX, useRef } from "react";
 import * as THREE from "three";
 import { CustomMaterial } from "./material";
 import React from "react";
@@ -10,7 +10,8 @@ import React from "react";
 const radius = 3;
 const count = 8;
 
-function Item(props: GroupProps) {
+// 👇 Change here
+function Item(props: JSX.IntrinsicElements["group"]) {
   const ref = useRef<THREE.Group>(null);
 
   useFrame(() => {
@@ -44,23 +45,21 @@ export const Item3 = () => {
       <group>
         <group scale={0.6} ref={groupRef}>
           <Instances>
-            <cylinderGeometry args={[1, 1, 0.1, 64]}></cylinderGeometry>
-            <CustomMaterial></CustomMaterial>
-            {Array.from({ length: 8 }).map((_, index) => {
-              return (
-                <Item
-                  position={[
-                    radius *
-                      Math.cos((index * 2 * Math.PI) / count + Math.PI / 4),
-                    radius *
-                      Math.sin((index * 2 * Math.PI) / count + Math.PI / 4),
-                    0,
-                  ]}
-                  rotation={[0, 0, (index * 2 * Math.PI) / count]}
-                  key={index}
-                ></Item>
-              );
-            })}
+            <cylinderGeometry args={[1, 1, 0.1, 64]} />
+            <CustomMaterial />
+            {Array.from({ length: 8 }).map((_, index) => (
+              <Item
+                key={index}
+                position={[
+                  radius *
+                    Math.cos((index * 2 * Math.PI) / count + Math.PI / 4),
+                  radius *
+                    Math.sin((index * 2 * Math.PI) / count + Math.PI / 4),
+                  0,
+                ]}
+                rotation={[0, 0, (index * 2 * Math.PI) / count]}
+              />
+            ))}
           </Instances>
         </group>
       </group>
