@@ -1,31 +1,21 @@
-import { Metadata } from "next";
-import Aboutus from "./components/home/about-us";
-import Contact from "./components/home/contact";
-import Faq from "./components/home/faq";
-import HeroSection from "./components/home/hero";
-import Portfolio from "./components/home/portfolio";
-import Pricing from "./components/home/pricing";
-import Resources from "./components/home/resources";
-import Services from "./components/home/services";
-import StatsFacts from "./components/home/stats-facts";
-import Team from "./components/home/team";
-import Testimonial from "./components/home/testimonial";
+"use client";
 
-export const metadata: Metadata = {
-  title: "GWS",
-};
-
+import { useState } from "react";
+import { LoaderWindow } from "../components/loaderWindow/index";
+import { SectionHero } from "../components/Main/SectionHero";
 export default function Home() {
+  const [displayed, setDisplayed] = useState(0);
+  const [loaderFinished, setLoaderFinished] = useState(false);
+
   return (
     <>
-      <HeroSection />
-      <StatsFacts />
-      {/* <Portfolio/> */}
-      <Services />
-      <Aboutus />
-      <Testimonial />
-      <Faq />
-      <Contact contactdataNumber="6" />
+      <SectionHero />
+
+      {/* <LoaderWindow
+        setLoaderFinished={setLoaderFinished}
+        displayed={displayed}
+        setDisplayed={setDisplayed}
+      /> */}
     </>
   );
 }

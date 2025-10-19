@@ -1,0 +1,117 @@
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 115vw;
+  height: 115vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  z-index: 1000;
+  font-size: 2rem;
+  border-radius: 50%;
+
+  // clip-path: circle(100% at 50% 50%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.containerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  //   background-color: red;
+}
+
+.overflowTop {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  background-color: black;
+  will-change: transform;
+}
+
+.overflowBottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background-color: black;
+  will-change: transform;
+}
+
+.content {
+  // background-color: red;
+}
+
+.header {
+  // background-color: red;
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 14vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.loadingText {
+  color: black;
+  position: absolute;
+  bottom: -100%;
+
+  font-family: var(--font-Display, Apercu);
+  font-size: 15vw;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -15px;
+
+  text-align: left;
+}
+
+.loadingTextSubLeft {
+  letter-spacing: 1px;
+  font-size: 14px;
+  opacity: 0;
+}
+
+.loadingTextChar {
+  display: inline-block;
+  // overflow: hidden;
+  // background-color: blue;
+}
+
+.loadingTextChar > span {
+  position: relative;
+  display: block;
+  transform: translateY(100%);
+  will-change: transform;
+}
+
+.tooltip {
+  position: absolute;
+  left: 20%;
+  top: 10%;
+  overflow: hidden;
+}
+
+.tooltipText {
+  font-size: 20px;
+  color: white;
+  font-weight: 300;
+  position: relative;
+  transform: translateY(-100%);
+  overflow: hidden;
+  font-family: "Edu NSW ACT Hand Pre", cursive;
+}
