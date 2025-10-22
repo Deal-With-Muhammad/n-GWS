@@ -120,12 +120,9 @@ export default function About() {
 
           <h2
             ref={headingRef}
-            className="text-4xl charmonman-bold sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight"
+            className="text-4xl charmonman-bold text-center sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight"
           >
-            More Than Just Financial Advice —{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-yellow-600">
-              A Partnership
-            </span>
+            More Than Just Financial Advice
           </h2>
 
           <p

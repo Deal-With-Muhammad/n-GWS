@@ -275,9 +275,7 @@ export default function HeroSection() {
         <section className="relative">
           <ServicesPreview />
         </section>
-        <section className="relative">
-          <TestimonialsSection />
-        </section>
+        <TestimonialsSection />
         <Curve>
           <motion.main
             className={styles.main}
