@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { Button } from "@heroui/react";
 import { useState } from "react";
 import { LoaderWindow } from "../components/loaderWindow/index";
@@ -8,12 +8,18 @@ import MarqueeSection from "@/components/marquee-section";
 import About from "@/components/aboutSection";
 import styles from "@/styles/Home.module.scss";
 import Curve from "@/components/Contact/Curve";
-import { motion, useScroll, useTransform } from "framer-motion";
+import {
+  AnimatePresence,
+  motion,
+  useScroll,
+  useTransform,
+} from "framer-motion";
 import { useRef } from "react";
 import Contact from "@/components/Contact";
 import { slide } from "@/components/Contact/anim/anim";
 import ServicesPreview from "@/components/Services";
 import TestimonialsSection from "@/components/testimonials";
+import Preloader from "@/components/Preloader";
 
 export default function HeroSection() {
   const [loaderFinished, setLoaderFinished] = useState(false);
@@ -22,11 +28,27 @@ export default function HeroSection() {
     target: container,
     offset: ["start end", "end start"],
   });
+  const [isLoading, setIsLoading] = useState(true);
 
+    useEffect(() => {
+      (async () => {
+        const LocomotiveScroll = (await import("locomotive-scroll")).default;
+        const locomotiveScroll = new LocomotiveScroll();
+
+        setTimeout(() => {
+          setIsLoading(false);
+          document.body.style.cursor = "default";
+          window.scrollTo(0, 0);
+        }, 2000);
+      })();
+    }, []);
+  
   const height = useTransform(scrollYProgress, [0, 0.9], [50, 0]);
   return (
     <>
-      {/* <LoaderWindow setLoaderFinished={setLoaderFinished} /> */}
+      <AnimatePresence mode="wait">
+        {isLoading && <Preloader />}
+      </AnimatePresence>
       <div className="min-h-screen py-24 bg-gradient-to-br from-gray-50 to-white dark:from-gray-950 dark:to-gray-900 flex items-center justify-center px-4 sm:px-6 lg:px-8">
         <div className="sm:max-w-7xl ">
           <div className="grid lg:grid-cols-2 gap-12">
