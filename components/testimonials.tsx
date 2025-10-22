@@ -79,7 +79,7 @@ export default function TestimonialsSection() {
             </span>
           </div>
 
-          <h2 className="text-3xl charmonman-bold sm:text-4xl font-bold text-gray-900 dark:text-white">
+          <h2 className="text-4xl charmonman-bold sm:text-5xl font-bold text-gray-900 dark:text-white">
             Trusted by Clients
           </h2>
           <p className="text-sm text-gray-600 dark:text-gray-400 max-w-xl mx-auto">
