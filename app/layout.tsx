@@ -35,8 +35,8 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
       <head />
-      <body className={clsx(fontSans.variable)}>
-        <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
+      <body className={clsx("dark:bg-gray-950", fontSans.variable)}>
+        <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
           <Navigation />
           {children}
         </Providers>
