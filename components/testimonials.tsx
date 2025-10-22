@@ -112,7 +112,7 @@ export default function TestimonialsSection() {
             </span>
           </div>
 
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white">
+          <h2 className="text-4xl charmonman-bold sm:text-5xl font-bold text-gray-900 dark:text-white">
             What Clients Say About{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-yellow-600">
               Working Together
