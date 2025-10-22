@@ -8,13 +8,16 @@ import styles from "./style.module.scss";
 const words = [
   "Hello",
   "Hola",
-  "Olà",
+  "Olá",
   "Bonjour",
+  "ہیلو",
+  "हैलो",
   "Ciao",
-  "やあ",
-  "Hallå",
-  "Guten tag",
-  "Hallo",
+  "مرحبا",
+  "こんにちは",
+  "안녕하세요",
+  "你好",
+  "Здравствуйте",
 ];
 
 function Preloader() {
