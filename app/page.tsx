@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
-import { Button } from "@heroui/react";
+import { Button, Image } from "@heroui/react";
 import { useState } from "react";
 import { LoaderWindow } from "../components/loaderWindow/index";
 import ScrollIntroduction from "@/components/aboutSection";
@@ -30,19 +30,19 @@ export default function HeroSection() {
   });
   const [isLoading, setIsLoading] = useState(true);
 
-    useEffect(() => {
-      (async () => {
-        const LocomotiveScroll = (await import("locomotive-scroll")).default;
-        const locomotiveScroll = new LocomotiveScroll();
+  useEffect(() => {
+    (async () => {
+      const LocomotiveScroll = (await import("locomotive-scroll")).default;
+      const locomotiveScroll = new LocomotiveScroll();
 
-        setTimeout(() => {
-          setIsLoading(false);
-          document.body.style.cursor = "default";
-          window.scrollTo(0, 0);
-        }, 2000);
-      })();
-    }, []);
-  
+      setTimeout(() => {
+        setIsLoading(false);
+        document.body.style.cursor = "default";
+        window.scrollTo(0, 0);
+      }, 2000);
+    })();
+  }, []);
+
   const height = useTransform(scrollYProgress, [0, 0.9], [50, 0]);
   return (
     <>
@@ -192,7 +192,8 @@ export default function HeroSection() {
                   className="relative"
                 >
                   <div className="relative sm:w-[480px] sm:h-[480px] rounded-full overflow-hidden border-8 border-white dark:border-gray-900 shadow-2xl">
-                    <img
+                    <Image
+                      radius="none"
                       src="sadeed.png"
                       alt="Sadeed - Financial Advisor"
                       className="w-full h-full object-cover"
@@ -211,7 +212,7 @@ export default function HeroSection() {
                     type: "spring",
                     stiffness: 200,
                   }}
-                  className="absolute bottom-[42] right-38 bg-yellow-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg flex items-center gap-2"
+                  className="absolute hidden bottom-[42] right-38 bg-yellow-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg sm:flex items-center gap-2"
                 >
                   <span className="text-sm">✓</span>
                   Certified Advisor
