@@ -235,15 +235,6 @@ export default function ServicesPreview() {
         </div>
 
         {/* Bottom CTA */}
-        <div ref={ctaRef} className="text-center mt-16">
-          <Button
-            size="lg"
-            className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold shadow-md hover:shadow-xl transition-all px-8"
-            radius="full"
-          >
-            Schedule a Consultation
-          </Button>
-        </div>
       </div>
     </section>
   );

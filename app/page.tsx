@@ -60,7 +60,7 @@ export default function HeroSection() {
         <section className="relative">
           <MarqueeSection />
         </section>
-        <section className="relative">
+        <section className="relative" id="services">
           <ServicesPreview />
         </section>
         <TestimonialsSection />
