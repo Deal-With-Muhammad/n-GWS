@@ -55,8 +55,8 @@ const Contact = () => {
         <div className={styles.nav}>
           <Magnetic>
             <div className={styles.button}>
-              <a href="mailto:sadeed@gmail.com">
-                <p>sadeed@gmail.com</p>
+              <a href="mailto:sadeedb626@gmail.com">
+                <p>sadeedb626@gmail.com</p>
               </a>
             </div>
           </Magnetic>
