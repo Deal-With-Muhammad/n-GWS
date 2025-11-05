@@ -5,11 +5,14 @@ import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import Link from "next/link";
 import { ThemeSwitch } from "./theme-switch";
+import { PopupModal } from "react-calendly";
 
 export const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
+  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
+  const [rootEl, setRootEl] = useState(null);
   const navRef = useRef(null);
   const navContainerRef = useRef(null);
   const logoRef = useRef(null);
@@ -32,7 +35,6 @@ export const Navigation = () => {
 
       // Show/hide logic
       if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
-        // Scrolling down & past threshold - hide navbar
         if (isVisible) {
           setIsVisible(false);
           gsap.to(navRef.current, {
@@ -42,7 +44,6 @@ export const Navigation = () => {
           });
         }
       } else if (currentScrollY < lastScrollY.current) {
-        // Scrolling up - show navbar
         if (!isVisible) {
           setIsVisible(true);
           gsap.to(navRef.current, {
@@ -59,7 +60,6 @@ export const Navigation = () => {
       if (shouldBeScrolled && !isScrolled) {
         setIsScrolled(true);
 
-        // Animate navbar background with proper dark mode support
         gsap.to(navRef.current, {
           backgroundColor: "var(--nav-bg-scrolled)",
           backdropFilter: "blur(16px)",
@@ -72,7 +72,6 @@ export const Navigation = () => {
           ease: "power3.out",
         });
 
-        // Reduce padding with liquid ease
         gsap.to(navContainerRef.current, {
           paddingTop: "12px",
           paddingBottom: "12px",
@@ -112,6 +111,12 @@ export const Navigation = () => {
     { label: "Services", href: "#services" },
     { label: "About", href: "/about" },
   ];
+
+  // Set root element for Calendly modal
+  useEffect(() => {
+    // Use document.body instead of trying to find __next
+    setRootEl(document.body);
+  }, []);
 
   return (
     <>
@@ -170,9 +175,9 @@ export const Navigation = () => {
             <div className="flex items-center gap-3 sm:gap-4">
               <ThemeSwitch />
 
-              <Link
-                href="/contact"
-                className="hidden sm:flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white text-sm font-semibold rounded-full shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200"
+              <button
+                onClick={() => setIsCalendlyOpen(true)}
+                className="hidden sm:flex cursor-pointer items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white text-sm font-semibold rounded-full shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200"
               >
                 Book a Call
                 <svg
@@ -188,7 +193,7 @@ export const Navigation = () => {
                     d="M17 8l4 4m0 0l-4 4m4-4H3"
                   />
                 </svg>
-              </Link>
+              </button>
 
               {/* Mobile Menu Button */}
               <button
@@ -216,17 +221,29 @@ export const Navigation = () => {
                   {item.label}
                 </Link>
               ))}
-              <Link
-                href="/contact"
-                onClick={() => setIsMobileMenuOpen(false)}
+              <button
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  setIsCalendlyOpen(true);
+                }}
                 className="block w-full mt-2 px-4 py-3 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white text-center rounded-full font-semibold shadow-md hover:shadow-lg transition-all duration-200"
               >
                 Book a Call
-              </Link>
+              </button>
             </div>
           </div>
         )}
       </nav>
+
+      {/* Calendly Popup Modal */}
+      {rootEl && (
+        <PopupModal
+          url="https://calendly.com/ilbigboss21"
+          onModalClose={() => setIsCalendlyOpen(false)}
+          open={isCalendlyOpen}
+          rootElement={rootEl}
+        />
+      )}
 
       {/* Spacer to prevent content from going under fixed navbar */}
       <div className="h-20 sm:h-24"></div>
