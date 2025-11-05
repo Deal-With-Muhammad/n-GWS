@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
-import { Button, Image } from "@heroui/react";
+import { Button, Image, Link } from "@heroui/react";
 import { motion } from "framer-motion";
 
 function Hero() {
@@ -64,6 +64,8 @@ function Hero() {
               </Button>
 
               <Button
+                as={Link}
+                href="/about"
                 size="lg"
                 variant="flat"
                 className="text-gray-700 w-full sm:w-auto dark:text-gray-300 font-semibold"
