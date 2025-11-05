@@ -76,9 +76,11 @@
             }
 
             h2 {
-                font-size: 98px;
+                font-size: 108px;
                 margin: 0px;
+                position: absolute;
                 font-weight: 300;
+                top:10px;
 
                 @media (max-width:1000px) {
                     font-size: 64px;

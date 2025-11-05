@@ -54,9 +54,9 @@ export default function HeroSection() {
       <Hero />
       {/* hero section */}
       <div className="w-full">
-        <section className="relative">
+        {/* <section className="relative">
           <About />
-        </section>
+        </section> */}
         <section className="relative">
           <MarqueeSection />
         </section>
