@@ -71,35 +71,19 @@ const Contact = () => {
         <div className={styles.info}>
           <div className={styles.v}>
             <span>
-              <h3>Version</h3>
-              <p>2025 © Edition</p>
+              <h3>Copyright</h3>
+              <p>2025 © Grow With Sadeed</p>
             </span>
           </div>
           <div className={styles.s}>
-            <span>
-              <h3>socials</h3>
-
-              <Magnetic>
-                <a href="https://github.com/maheshpaulj/" target="_blank">
-                  Github
-                </a>
-              </Magnetic>
-            </span>
             <Magnetic>
-              <a href="https://instagram.com/mahesh_paul_j" target="_blank">
+              <a href="https://www.instagram.com/sadeed_64/" target="_blank">
                 Instagram
               </a>
             </Magnetic>
+
             <Magnetic>
-              <a
-                href="https://discordapp.com/users/509270434303311872"
-                target="_blank"
-              >
-                Discord
-              </a>
-            </Magnetic>
-            <Magnetic>
-              <a href="https://linkedin.com/in/mahesh-paul" target="_blank">
+              <a href="https://linkedin.com/" target="_blank">
                 Linkedin
               </a>
             </Magnetic>
