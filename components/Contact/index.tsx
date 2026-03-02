@@ -45,7 +45,7 @@ const Contact = () => {
           <div className={styles.v}>
             <span>
               <h3>Copyright</h3>
-              <p>2025 © Grow With Sadeed</p>
+              <p>2026 © Grow With Sadeed</p>
             </span>
           </div>
           <div className={styles.s}>
