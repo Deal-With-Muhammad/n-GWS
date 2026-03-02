@@ -15,8 +15,8 @@ function Hero() {
 
   return (
     <>
-      <div className="min-h-screen py-24 bg-gradient-to-br from-gray-50 to-white dark:from-gray-950 dark:to-gray-900 flex items-center justify-center px-4 sm:px-6 lg:px-8">
-        <div className="sm:max-w-7xl ">
+      <div className="min-h-screen  bg-gradient-to-br from-gray-50 to-white dark:from-gray-950 dark:to-gray-900 flex items-center justify-center px-4 sm:px-6 lg:px-8">
+        <div className=" ">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Left Side - Text Content */}
             <motion.div
@@ -31,32 +31,36 @@ function Hero() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
-                  className="text-5xl sm:text-5xl charmonman-bold lg:text-6xl text-center sm:text-left font-bold sm:leading-16"
+                  className="text-5xl sm:text-5xl charmonman-bold lg:text-5xl text-center sm:text-left font-bold sm:leading-16"
                 >
                   <span className="text-gray-900 dark:text-white">
-                    Helping Toronto Professionals{" "}
+                    If You Own a Corporation in Canada, There's{" "}
                   </span>
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-yellow-600">
-                    Keep More
+                    One Conversation
                   </span>
                   <span className="text-gray-900 dark:text-white">
                     {" "}
-                    of What They Earn
+                    Most Business Owners Avoid.
                   </span>
                 </motion.h1>
               </div>
 
               {/* Subheadline */}
-              <motion.p
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="text-lg text-center text-gray-600 sm:text-left dark:text-gray-400 max-w-xl leading-relaxed"
+                className="space-y-2"
               >
-                Hi, I am Sadeed! With personalized tax strategies and
-                wealth-building solutions, I'm ready to help you protect your
-                income and grow your future.
-              </motion.p>
+                <p className="text-xl text-center sm:text-2xl font-extrabold  text-gray-600 dark:text-gray-200 sm:text-left leading-relaxed">
+                  It's not about revenue.
+                </p>
+                <p className="text-lg sm:text-xl text-gray-500 dark:text-gray-400 text-center sm:text-left  max-w-lg">
+                  It's about what happens when you transfer your business — or
+                  access your retained earnings.
+                </p>
+              </motion.div>
 
               {/* CTA Buttons */}
               <motion.div
@@ -71,7 +75,7 @@ function Hero() {
                   className="bg-gradient-to-r w-full sm:w-auto from-yellow-500 to-yellow-600 text-white font-semibold shadow-lg hover:shadow-xl transition-all px-8"
                   radius="full"
                 >
-                  Book a Free Strategy Call
+                  Schedule Your Private Corporate Review
                 </Button>
 
                 <Button

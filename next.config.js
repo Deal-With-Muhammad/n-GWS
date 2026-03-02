@@ -4,9 +4,9 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   typescript: {
-    // ✅ Ignore TypeScript build errors
     ignoreBuildErrors: true,
   },
+  // Add this block below:
 };
 
 module.exports = nextConfig;

@@ -1,6 +1,6 @@
 "use client";
-import React, { useEffect, useRef, ReactElement } from 'react';
-import gsap from 'gsap';
+import React, { useEffect, useRef, ReactElement } from "react";
+import gsap from "gsap";
 
 interface MagneticProps {
   children: ReactElement;
@@ -10,13 +10,19 @@ const Magnetic: React.FC<MagneticProps> = ({ children }) => {
   const magnetic = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
+    if (typeof window !== "undefined") {
       const isMobileOrTablet = window.innerWidth <= 768;
 
       if (!isMobileOrTablet && magnetic.current) {
         const element = magnetic.current;
-        const xTo = gsap.quickTo(element, "x", { duration: 1, ease: "elastic.out(1, 0.3)" });
-        const yTo = gsap.quickTo(element, "y", { duration: 1, ease: "elastic.out(1, 0.3)" });
+        const xTo = gsap.quickTo(element, "x", {
+          duration: 1,
+          ease: "elastic.out(1, 0.3)",
+        });
+        const yTo = gsap.quickTo(element, "y", {
+          duration: 1,
+          ease: "elastic.out(1, 0.3)",
+        });
 
         const handleMouseMove = (e: MouseEvent) => {
           const { clientX, clientY } = e;

@@ -14,19 +14,19 @@ interface ProfileData {
 export default function MarqueeSection() {
   const [profileData, setProfileData] = useState<PersonalInfo | null>(null);
 
-  useEffect(() => {
-    const fetchProfile = async () => {
-      try {
-        const response = await fetch("/data/profile.json");
-        const data: ProfileData = await response.json();
-        setProfileData(data.personalInfo);
-      } catch (error) {
-        console.error("Failed to fetch profile:", error);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchProfile = async () => {
+  //     try {
+  //       const response = await fetch("/data/profile.json");
+  //       const data: ProfileData = await response.json();
+  //       setProfileData(data.personalInfo);
+  //     } catch (error) {
+  //       console.error("Failed to fetch profile:", error);
+  //     }
+  //   };
 
-    fetchProfile();
-  }, []);
+  //   fetchProfile();
+  // }, []);
   return (
     <section className="relative py-20 overflow-hidden bg-gradient-to-b from-background via-secondary/5 to-background">
       {/* Background decoration with parallax effect */}

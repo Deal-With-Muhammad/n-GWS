@@ -40,7 +40,7 @@ export default function TestimonialsSection() {
     return () => clearInterval(interval);
   }, [isAutoPlaying]);
 
-  const goToSlide = (index) => {
+  const goToSlide = (index: React.SetStateAction<number>) => {
     setCurrentIndex(index);
     setIsAutoPlaying(false);
     setTimeout(() => setIsAutoPlaying(true), 10000);
@@ -54,7 +54,7 @@ export default function TestimonialsSection() {
 
   const prevSlide = () => {
     setCurrentIndex(
-      (prev) => (prev - 1 + testimonials.length) % testimonials.length
+      (prev) => (prev - 1 + testimonials.length) % testimonials.length,
     );
     setIsAutoPlaying(false);
     setTimeout(() => setIsAutoPlaying(true), 10000);
