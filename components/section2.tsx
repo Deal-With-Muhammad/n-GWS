@@ -42,6 +42,7 @@ function CuriosityHookSection() {
   return (
     <section
       ref={sectionRef}
+      id="curiosity"
       className="relative py-24 lg:py-32 overflow-hidden bg-white dark:bg-gray-950"
     >
       {/* Background Elements */}

@@ -70,7 +70,11 @@ function RealizationMomentSection() {
   ];
 
   return (
-    <section ref={sectionRef} className="relative overflow-hidden">
+    <section
+      id="realization"
+      ref={sectionRef}
+      className="relative overflow-hidden"
+    >
       {/* Animated Background */}
       <motion.div
         style={{ y: backgroundY }}

@@ -25,6 +25,7 @@ import CuriosityHookSection from "@/components/section2";
 import RealizationMomentSection from "@/components/section3";
 import AuthoritySection from "@/components/section4";
 import WhatWeDoSection from "@/components/section5";
+import FinalCloseSection from "@/components/section6";
 
 export default function HeroSection() {
   const [loaderFinished, setLoaderFinished] = useState(false);
@@ -71,6 +72,7 @@ export default function HeroSection() {
           <WhatWeDoSection />
         </section>
         <TestimonialsSection />
+        <FinalCloseSection />
         <Curve>
           <motion.main
             className={styles.main}
