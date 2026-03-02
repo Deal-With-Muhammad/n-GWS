@@ -24,7 +24,7 @@ function AuthoritySection() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-2 lg:py-40 overflow-hidden bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950"
+      className="relative py-2 pt-10 overflow-hidden bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950"
     >
       {/* Subtle Background Elements */}
       <motion.div
@@ -252,7 +252,7 @@ function AuthoritySection() {
           transition={{ delay: 1 }}
           className="mt-16 text-center"
         >
-          <p className="text-gray-600 dark:text-gray-300 mb-6 text-lg">
+          <p className="text-gray-600 dark:text-gray-300 text-lg">
             This same strategy is available to Canadian corporation owners like
             you.
           </p>

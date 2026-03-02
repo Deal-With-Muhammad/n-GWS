@@ -63,7 +63,7 @@ function WhatWeDoSection() {
   ];
 
   return (
-    <section ref={sectionRef} className="relative overflow-hidden ">
+    <section ref={sectionRef} className="relative overflow-hidden pb-10 pt-24 ">
       {/* Background Elements */}
       <motion.div
         style={{ y: backgroundY }}
