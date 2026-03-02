@@ -23,7 +23,7 @@ export const Navigation = () => {
     gsap.fromTo(
       navRef.current,
       { opacity: 0, y: -20 },
-      { opacity: 1, y: 0, duration: 0.6, ease: "power2.out", delay: 0.1 }
+      { opacity: 1, y: 0, duration: 0.6, ease: "power2.out", delay: 0.1 },
     );
   }, []);
 
@@ -108,8 +108,9 @@ export const Navigation = () => {
 
   const navItems = [
     { label: "Home", href: "/" },
-    { label: "Services", href: "#services" },
+    { label: "Curiosity", href: "#curiosity" },
     { label: "About", href: "/about" },
+    { label: "Realization ", href: "#realization" },
   ];
 
   // Set root element for Calendly modal

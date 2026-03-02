@@ -24,6 +24,7 @@ import Hero from "@/components/HeroSection/page";
 import CuriosityHookSection from "@/components/section2";
 import RealizationMomentSection from "@/components/section3";
 import AuthoritySection from "@/components/section4";
+import WhatWeDoSection from "@/components/section5";
 
 export default function HeroSection() {
   const [loaderFinished, setLoaderFinished] = useState(false);
@@ -63,11 +64,11 @@ export default function HeroSection() {
         <section className="relative">
           <MarqueeSection />
         </section>
-        <section className="relative" id="services">
+        <section className="relative">
           <CuriosityHookSection />
           <RealizationMomentSection />
           <AuthoritySection />
-          <ServicesPreview />
+          <WhatWeDoSection />
         </section>
         <TestimonialsSection />
         <Curve>
