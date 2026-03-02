@@ -63,7 +63,7 @@ function CuriosityHookSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16 lg:mb-24"
+          className="text-center mb-2"
         >
           {/* Label */}
           <motion.div
@@ -248,7 +248,7 @@ function CuriosityHookSection() {
           <p className="text-gray-500 dark:text-gray-400 mb-4">
             Is your corporation prepared for what's next?
           </p>
-          <motion.button
+          {/* <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-shadow"
@@ -267,7 +267,7 @@ function CuriosityHookSection() {
                 d="M17 8l4 4m0 0l-4 4m4-4H3"
               />
             </svg>
-          </motion.button>
+          </motion.button> */}
         </motion.div>
       </div>
     </section>

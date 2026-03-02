@@ -24,7 +24,7 @@ function AuthoritySection() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-32 lg:py-40 overflow-hidden bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950"
+      className="relative py-2 lg:py-40 overflow-hidden bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950"
     >
       {/* Subtle Background Elements */}
       <motion.div
@@ -256,7 +256,7 @@ function AuthoritySection() {
             This same strategy is available to Canadian corporation owners like
             you.
           </p>
-          <motion.button
+          {/* <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-gray-900 to-gray-800 dark:from-white dark:to-gray-200 text-white dark:text-gray-900 font-bold rounded-full shadow-xl hover:shadow-2xl transition-all"
@@ -275,7 +275,7 @@ function AuthoritySection() {
                 d="M17 8l4 4m0 0l-4 4m4-4H3"
               />
             </svg>
-          </motion.button>
+          </motion.button> */}
         </motion.div>
       </div>
     </section>
