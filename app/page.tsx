@@ -21,6 +21,7 @@ import ServicesPreview from "@/components/Services";
 import TestimonialsSection from "@/components/testimonials";
 import Preloader from "@/components/Preloader";
 import Hero from "@/components/HeroSection/page";
+import CuriosityHookSection from "@/components/section2";
 
 export default function HeroSection() {
   const [loaderFinished, setLoaderFinished] = useState(false);
@@ -61,6 +62,7 @@ export default function HeroSection() {
           <MarqueeSection />
         </section>
         <section className="relative" id="services">
+          <CuriosityHookSection />
           <ServicesPreview />
         </section>
         <TestimonialsSection />
