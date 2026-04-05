@@ -264,7 +264,7 @@ function Hero() {
       {/* Calendly Popup Modal */}
       {rootEl && (
         <PopupModal
-          url="https://calendly.com/ilbigboss21"
+          url="https://calendly.com/ahmadsadeed34/30min"
           onModalClose={() => setIsCalendlyOpen(false)}
           open={isCalendlyOpen}
           rootElement={rootEl}
